@@ -46,10 +46,19 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Run Docker
+## Run Docker in backend development env.
 
 ```bash
-
-
+# compose 
+$ docker-compose up -d --build
 ```
 
+
+## Run Docker in frontend development env.
+
+> uncomment the lines about this MS in the docker-compose.yml
+
+```bash
+# compose 
+$ docker-compose up -d --build
+```
