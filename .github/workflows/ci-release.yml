@@ -4,8 +4,6 @@
 name: CI - Release - Build, Tests & Docker
 
 on:
-  push:
-    branches: [ "release" ]
   pull_request:
     branches: [ "release" ]
 
