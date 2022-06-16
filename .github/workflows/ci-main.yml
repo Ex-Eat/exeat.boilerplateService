@@ -4,8 +4,6 @@
 name: CI - Main - Build, Tests & Docker
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
