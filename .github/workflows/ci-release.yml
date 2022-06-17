@@ -4,7 +4,7 @@
 name: CI - Release - Build, Tests & Docker
 
 on:
-  pull_request:
+  pull_request_target:
     branches: [ "release" ]
 
 jobs:
