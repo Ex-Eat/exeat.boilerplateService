@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="./exeat-logo.png" width="320" alt="Nest Logo" /></a>
+  <img src="./exeat-logo.png" width="320" alt="Nest Logo" />
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
@@ -13,6 +13,19 @@
 ## Description
 
 Ex'eat is a food delivery company.
+
+## All MS
+
+- exeat.authService: 8080
+- exeat.clientService: 8081
+- exeat.restaurantService: 8082
+- exeat.deliverService: 8083
+- exeat.orderService: 8084
+- exeat.paymentService: 8085
+- exeat.statsService: 8086
+- exeat.patronageService: 8087
+
+
 
 ## Installation
 
