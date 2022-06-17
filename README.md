@@ -75,3 +75,13 @@ $ docker-compose up -d --build
 # compose 
 $ docker-compose up -d --build
 ```
+
+
+## Merge branches
+
+```bash
+$ git checkout "branch-name"
+$ git pull
+$ git rebase main
+$ git push origin "branch-name" --force
+```
