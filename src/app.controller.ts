@@ -1,15 +1,17 @@
-import {Controller, Get, UseGuards} from '@nestjs/common';
+import {Controller} from '@nestjs/common';
 import { AppService } from './app.service';
-import {JwtGuard} from "./auth/jwt.guard";
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import {MessagePattern} from "@nestjs/microservices";
 @Controller()
 export class AppController {
     constructor(private readonly appService: AppService) {}
 
-    //@UseGuards(JwtGuard)
-    @Get()
-    getHello(): string {
-        return this.appService.getHello();
+    @MessagePattern('sum')
+    async sumNumbers(data: Array<number>) {
+        return { result: data.reduce((a, b) => a + b) }
+    }
+
+    @MessagePattern('alive')
+    async isAlive() {
+        return this.appService.isAlive()
     }
 }
