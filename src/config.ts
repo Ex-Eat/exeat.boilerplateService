@@ -4,8 +4,11 @@ export const config = {
     BASE_URL: process.env.EXEAT_BASE_URL || 'http://localhost:8080',
     APP_ENV: process.env.APP_ENV || 'PREPROD',
     DB_HOST: process.env.DB_HOST || 'localhost',
+    APP_PORT: process.env.APP_PORT || '8200',
+    APP_NAME: process.env.APP_NAME || 'boilerplateService',
+    APP_HOST: process.env.APP_HOST || '127.0.0.1',
     DB_PORT: process.env.DB_PORT || '64000',
     DB_NAME: process.env.DB_NAME || 'exeat',
-    DB_USERNAME: process.env.DB_USERNAME || 'dev',
-    DB_PASSWORD: process.env.DB_PASSWORD || 'password',
+    DB_USERNAME: process.env.DB_USERNAME || '',
+    DB_PASSWORD: process.env.DB_PASSWORD || '',
 };
